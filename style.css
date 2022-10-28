@@ -1,0 +1,66 @@
+body,header,main,nav,article, section,.kiskep.nagykep{
+    border: 1px solid black;
+    padding: 10px;
+}
+*{
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+}
+main{
+    width: 60%;
+    margin: auto;
+}
+.kiskep{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    
+}
+.kiskep>.kep>img{
+    width: 100%;
+    border: 1px solid black;
+    padding: 1px;
+}
+.nagykep>img{
+    width: 100%;
+}
+nav{
+   
+    background-color: gray;
+    
+}
+nav>ul{
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    padding-left: 0;
+    margin: 0;
+}
+nav>ul>li{
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+.piros{
+    background-color: red;
+}
+nav>ul>li>a:hover{ 
+    background-color: red;}
+
+@media screen and (max-width: 800px)
+{
+    nav>ul{
+        grid-template-columns: repeat(1, auto);
+        gap: 20px;
+    }
+    nav>ul>li.piros2
+    {
+        background-color: red;
+        padding: 10px;
+    }
+}
